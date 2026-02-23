@@ -1,10 +1,12 @@
 def FizzBuzz(start, finish):
+    mylist = []
     for i in range(start, finish + 1):
         if i % 15 == 0:
-            print("fizzbuzz")
+            mylist.append("fizzbuzz")
         elif i % 3 == 0:
-            print("fizz")
+            mylist.append("fizz")
         elif i % 5 == 0:
-            print("buzz")
+            mylist.append("buzz")
         else:
-            print(i)
+            mylist.append(i)
+    return mylist
